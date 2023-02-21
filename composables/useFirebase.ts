@@ -27,13 +27,13 @@ export const initUser = async () => {
   firebaseUser.value = auth.currentUser;
 
   onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      console.log('initUser', user);
-    } else {
-      console.log('initUser', user);
-    }
+    // if (user) {
+    //   // User is signed in, see docs for a list of available properties
+    //   // https://firebase.google.com/docs/reference/js/firebase.User
+    //   console.log('initUser', user);
+    // } else {
+    //   console.log('initUser', user);
+    // }
 
     firebaseUser.value = user;
   });
@@ -41,6 +41,5 @@ export const initUser = async () => {
 
 export const signOutUser = async () => {
   const auth = getAuth();
-  const result = await auth.signOut();
-  console.log('signOutUser', result);
+  await auth.signOut();
 };

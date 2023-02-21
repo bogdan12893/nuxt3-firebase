@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template lang="pug">
-NuxtLayout
-  NuxtPage
+div
+  p HOMEPAGE
 </template>
 
 <style lang="scss" scoped></style>

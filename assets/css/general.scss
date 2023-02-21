@@ -1,0 +1,11 @@
+input {
+  @apply border border-blue-700 p-3 rounded-lg;
+}
+
+label {
+  @apply block;
+}
+
+button {
+  @apply block p-3 border border-blue-300 rounded-lg mt-3;
+}
